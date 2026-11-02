@@ -115,6 +115,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .projects__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .project-card { position: relative; display: flex; flex-direction: column; min-height: 270px; padding: 1.5rem; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(145deg, rgba(21,27,22,.95), rgba(13,17,14,.95)); transition: transform .22s ease, border-color .22s ease; }
 .project-card::before { content: ''; position: absolute; inset: 0 auto auto 1.5rem; width: 36px; height: 2px; background: var(--accent); opacity: .8; }
+.project-card--featured { grid-column: span 2; min-height: auto; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(182,243,107,.38); }
 .project-card__header { margin: .35rem 0 .8rem; }
 .project-card__title { display: flex; align-items: center; flex-wrap: wrap; gap: .55rem; font: 600 1.25rem var(--display); letter-spacing: -.03em; }
@@ -191,6 +192,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     .hero__title { font-size: clamp(3.3rem, 13vw, 5.2rem); }
     .hero-panel { max-width: 480px; transform: none; }
     .projects__grid { grid-template-columns: 1fr; }
+    .project-card--featured { grid-column: auto; }
     .project-card { min-height: 230px; }
     .github__links { grid-template-columns: 1fr; }
     .github-card { min-height: auto; }
