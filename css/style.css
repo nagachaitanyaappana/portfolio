@@ -94,8 +94,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .section { padding: clamp(4.5rem, 8vw, 7rem) 0; }
 .section--alt { background: rgba(255,255,255,.018); border-block: 1px solid var(--line); }
 .section__header { margin-bottom: 2.2rem; }
-.section__title { font: 600 clamp(2rem, 4vw, 2.8rem)/1.1 var(--display); letter-spacing: -.055em; }
-.section__title::before { content: '/ '; color: var(--accent); font: 500 .65em var(--mono); vertical-align: .12em; }
+.section__title { font: 600 clamp(2rem, 4vw, 2.8rem)/1.1 var(--display); letter-spacing: -.055em; position: relative; padding-left: 1.25rem; }
+.section__title::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
 .section__description { max-width: 680px; margin-top: .65rem; color: var(--muted); }
 
 /* About */
