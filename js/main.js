@@ -62,3 +62,19 @@ if ('IntersectionObserver' in window && linkById.size) {
         if (el) observer.observe(el);
     });
 }
+
+// Profile photo: shows assets/profile.jpg or assets/profile.png if present,
+// otherwise the initials placeholder stays in place.
+const avatar = document.getElementById('avatar');
+if (avatar) {
+    const photoSources = ['assets/profile.jpg', 'assets/profile.png'];
+    const tryPhoto = index => {
+        if (index >= photoSources.length) return;
+        const img = new Image();
+        img.alt = 'Photo of Appana Naga Chaitanya';
+        img.onload = () => avatar.replaceChildren(img);
+        img.onerror = () => tryPhoto(index + 1);
+        img.src = photoSources[index];
+    };
+    tryPhoto(0);
+}
