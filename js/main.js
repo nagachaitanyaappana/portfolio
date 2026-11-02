@@ -35,11 +35,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (targetElement) {
             const headerHeight = document.querySelector('.site-header')?.offsetHeight || 70;
             const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-            
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
             e.preventDefault();
             window.scrollTo({
                 top: targetPosition,
-                behavior: 'smooth'
+                behavior: prefersReducedMotion ? 'auto' : 'smooth'
             });
         }
     });
