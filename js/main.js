@@ -45,3 +45,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Highlight the nav link of the section currently in view
+const sectionLinks = Array.from(navLinks).filter(l => l.getAttribute('href')?.startsWith('#'));
+const linkById = new Map(sectionLinks.map(l => [l.getAttribute('href').slice(1), l]));
+if ('IntersectionObserver' in window && linkById.size) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            sectionLinks.forEach(l => l.classList.remove('is-active'));
+            linkById.get(entry.target.id)?.classList.add('is-active');
+        });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    linkById.forEach((_, id) => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+    });
+}

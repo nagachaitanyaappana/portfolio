@@ -26,10 +26,8 @@
                 <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
-                <li class="nav__item"><a href="#github" class="nav__link">GitHub</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link nav__link--contact">Contact</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#resume" class="nav__link nav__link--contact">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -136,7 +134,7 @@
                         <header class="project-card__header">
                             <h3 class="project-card__title">THE SYSTEM</h3>
                         </header>
-                        <p class="project-card__description">A Java/Spring Boot application. Specific business purpose and production status not detailed.</p>
+                        <p class="project-card__description">A backend application built with Java 21 and Spring Boot, using a PostgreSQL database with Flyway migrations and Testcontainers-based tests.</p>
                         <div class="project-card__tags">
                             <span class="project-tag">Java 21</span>
                             <span class="project-tag">Spring Boot 3.4.5</span>
@@ -175,26 +173,34 @@
                             <span class="project-tag">Reports</span>
                         </div>
                     </article>
+
+                    <article class="project-card">
+                        <header class="project-card__header">
+                            <h3 class="project-card__title">Building Calcs</h3>
+                        </header>
+                        <p class="project-card__description">A single-page web tool for estimating building material quantities, with tabs for RCC, brickwork, plastering and flooring, a bill of quantities (BOQ) view, and print support.</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                        </div>
+                        <a class="project-card__link" href="https://github.com/nagachaitanyaappana/building_calcs" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="experience" class="section section--alt">
             <div class="container">
-                <header class="section__header"><h2 class="section__title">Experience &amp; Training</h2><p class="section__description">A snapshot of my current industrial training.</p></header>
+                <header class="section__header">
+                    <h2 class="section__title">Experience &amp; Education</h2>
+                </header>
                 <article class="experience-card">
                     <p class="project-detail__eyebrow">Industrial training · 15 May – 20 November 2026</p>
                     <h3 class="experience-card__title">National Informatics Centre (NIC), Kakinada</h3>
-                    <p>I am undertaking my third-year industrial training at NIC Kakinada as part of my Diploma in Computer Engineering. Specific responsibilities, tools, and work outcomes will be added as they are confirmed and documented.</p>
+                    <p>I am doing my third-year industrial training at NIC Kakinada as part of my Diploma in Computer Engineering.</p>
                 </article>
-            </div>
-        </section>
-
-        <section id="education" class="section section--alt">
-            <div class="container">
-                <header class="section__header">
-                    <h2 class="section__title">Education</h2>
-                </header>
+                <h3 id="education" class="subsection__title">Education</h3>
                 <div class="timeline">
                     <article class="timeline-item">
                         <div class="timeline-item__marker" aria-hidden="true"></div>
@@ -213,6 +219,24 @@
                             <p class="timeline-item__meta">1st Year: 856 / 1000 • 2nd Year 3rd Sem: 773 / 900 • 2nd Year 4th Sem: 820 / 900</p>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <div class="container">
+                <header class="section__header">
+                    <h2 class="section__title">Resume</h2>
+                    <p class="section__description">A one-page summary of my education, training, projects, and skills.</p>
+                </header>
+                <div class="resume">
+                    <div class="resume__actions">
+                        <a class="btn btn--primary" href="assets/resume/Naga_Chaitanya_Resume.pdf" download="Naga_Chaitanya_Resume.pdf">Download resume (PDF) <span aria-hidden="true">↓</span></a>
+                        <a class="btn btn--secondary" href="assets/resume/Naga_Chaitanya_Resume.pdf" target="_blank" rel="noopener noreferrer">Open in new tab <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <a class="resume__preview" href="assets/resume/Naga_Chaitanya_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the full resume PDF in a new tab">
+                        <img src="assets/resume/resume-preview.png" width="1075" height="1521" alt="Preview of Appana Naga Chaitanya's one-page resume: profile, education, industrial training at NIC Kakinada, projects, and skills." loading="lazy">
+                    </a>
                 </div>
             </div>
         </section>
@@ -245,30 +269,6 @@
             </div>
         </section>
 
-        <section id="resume" class="section">
-            <div class="container">
-                <header class="section__header">
-                    <h2 class="section__title">Resume</h2>
-                    <p class="section__description">A one-page summary of my education, training, projects, and skills.</p>
-                </header>
-                <div class="resume">
-                    <div class="resume__actions">
-                        <a class="btn btn--primary" href="assets/resume/Naga_Chaitanya_Resume.pdf" download="Naga_Chaitanya_Resume.pdf">Download resume (PDF) <span aria-hidden="true">↓</span></a>
-                        <a class="btn btn--secondary" href="assets/resume/Naga_Chaitanya_Resume.pdf" target="_blank" rel="noopener noreferrer">Open in new tab <span aria-hidden="true">↗</span></a>
-                    </div>
-                    <a class="resume__preview" href="assets/resume/Naga_Chaitanya_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the full resume PDF in a new tab">
-                        <img src="assets/resume/resume-preview.png" width="1075" height="1521" alt="Preview of Appana Naga Chaitanya's one-page resume: profile, education, industrial training at NIC Kakinada, projects, and skills." loading="lazy">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="achievements" class="section">
-            <div class="container"><header class="section__header"><h2 class="section__title">Achievements &amp; Certifications</h2></header>
-                <p class="section__description">Verified certificates, awards, and milestones will be added here as they are earned and documented.</p>
-            </div>
-        </section>
-
         <section id="contact" class="section">
             <div class="container">
                 <header class="section__header">
@@ -277,8 +277,8 @@
                 <div class="contact__content">
                     <p>Feel free to reach out.</p>
                     <div class="contact__links">
-                        <span class="contact-link">Email: nagachaitanyaappana@gmail.com</span>
-                        <span class="contact-link">Phone: +91 8790440684</span>
+                        <a href="mailto:nagachaitanyaappana@gmail.com" class="contact-link">Email: nagachaitanyaappana@gmail.com</a>
+                        <a href="tel:+918790440684" class="contact-link">Phone: +91 8790440684</a>
                         <a href="https://github.com/nagachaitanyaappana/" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
                     </div>
                 </div>
