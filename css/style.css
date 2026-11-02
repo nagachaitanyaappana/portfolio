@@ -147,6 +147,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .contact-link { display: inline-flex; padding: .55rem .8rem; border: 1px solid var(--line); border-radius: 6px; color: var(--accent); font-size: .85rem; overflow-wrap: anywhere; }
 .contact-link:hover { border-color: rgba(182,243,107,.45); }
 
+/* Resume */
+.resume__actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 1.2rem; }
+.resume__preview { display: block; max-width: 720px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 24px 80px rgba(0,0,0,.28); transition: border-color .2s ease; }
+.resume__preview:hover { border-color: rgba(182,243,107,.45); }
+.resume__preview img { display: block; width: 100%; height: auto; }
+
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); background: #080a08; padding: 1.8rem 0; }
 .footer__content { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
